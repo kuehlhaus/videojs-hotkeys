@@ -15,7 +15,7 @@
     root.returnExports = factory(root.videojs);
   }
 
-})(this, function(window, videojs) {
+})(this, function(videojs) {
   "use strict";
   window['videojs_hotkeys'] = { version: "0.2.10" };
 

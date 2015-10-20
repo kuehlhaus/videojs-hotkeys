@@ -6,7 +6,7 @@
   ],
   "license": "Apache-2.0",
   "description": "A plugin for Video.js that enables keyboard hotkeys when the player has focus.",
-  "main": "videojs.hotkeys.min.js",
+  "main": "videojs.hotkeys.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/ctd1500/videojs-hotkeys.git"

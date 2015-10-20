@@ -8,11 +8,11 @@
 
 ;(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define([], factory.bind(this, root, root.videojs));
-  } else if (typeof module !== 'undefined' && module.exports) {
-    module.exports = factory(root, root.videojs);
+    define('videojs-hotkeys', ['video.js'], factory);
+  } else if (typeof exports === 'object') {
+  	module.exports = factory(require('video.js'));
   } else {
-    factory(root, root.videojs);
+    root.returnExports = factory(root.videojs);
   }
 
 })(this, function(window, videojs) {
